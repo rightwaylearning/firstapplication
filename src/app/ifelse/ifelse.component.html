@@ -1,0 +1,66 @@
+    
+<div *ngIf="isValidId">
+    <h1>User Deatils</h1>
+    <ul>
+        <li>Name: Rahul</li>
+        <li>Age:32</li>
+        <li>Education:MBBS</li>
+    </ul>
+</div>
+<h1>-----------------------------------------------</h1>
+<div *ngIf="isOn">
+    <h1>User Deatils</h1>
+    <ul>
+        <li>Name: Krishna</li>
+        <li>Age:22</li>
+        <li>Education:MCA</li>
+    </ul>
+</div>
+<button (click)="update()">toggle</button>
+<h1>----------------------------------------------</h1>
+
+<button (click)="toggle()">change me!!</button>
+
+<p *ngIf="show;then truePart else falsePart"></p>
+<ng-template #truePart>
+     <h1>
+        I am true Part of If else block
+     </h1>
+</ng-template>
+
+<ng-template #falsePart>
+    <h1>
+        I am false Part of If else block
+     </h1>
+</ng-template>
+<h1>--------------------------------------------------------</h1>
+<p>multiple if ..else block</p>
+<ng-template [ngIf]="color == 'red'">
+     <h1>I am RED color block</h1>
+</ng-template>
+
+<ng-template [ngIf]="color == 'pink'">
+    <h1>I am PINK color block</h1>
+</ng-template>
+
+<ng-template [ngIf]="color == 'black'">
+    <h1>I am BLACK color block</h1>
+</ng-template>
+
+<ng-template [ngIf]="color == 'white'">
+    <h1>I am WHITE color block</h1>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

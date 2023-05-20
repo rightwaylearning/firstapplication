@@ -1,0 +1,20 @@
+<h1>Switch Case example</h1>
+
+<div [ngSwitch]="color">
+
+    <div *ngSwitchCase="'red'">
+       <h1>Hi I am Red block</h1>
+    </div>
+
+    <div *ngSwitchCase="'pink'">
+       <h1>HI I am Pink block</h1>
+    </div>
+
+    <div *ngSwitchCase="'black'">
+        <h1>HI I am black block</h1>
+    </div>
+
+    <div *ngSwitchDefault>
+        <h1>there is no any color match found</h1>
+    </div>
+</div>

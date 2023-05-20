@@ -1,0 +1,45 @@
+<h5>Example 1 ngFor & ngIf combination</h5>
+
+<p>Display all Numbers</p>
+<div *ngFor="let item of myArray">
+   <h1><b>{{item}}</b></h1>
+</div>
+<h1>-----------------------------</h1>
+<p>display only odd numbers</p>
+<div *ngFor="let item of myArray">
+    <div *ngIf="item%2 == 1">
+       <h1><b>{{item}}</b></h1>
+    </div>
+ </div>
+ <h1>-----------------------------</h1>
+<p>display only even numbers</p>
+<div *ngFor="let item of myArray">
+    <div *ngIf="item%2 == 0">
+       <h1><b>{{item}}</b></h1>
+    </div>
+ </div>
+ <h1>-------------------------------------------------</h1>
+<div *ngFor="let user of employeeInfo">
+   <div *ngIf="user.salary <= 200000">
+    <ol>
+        <li>Name: {{user.name}}</li>
+        <li>Age: {{user.age}}</li>
+        <li>Salary: {{user.salary}}</li>
+      </ol><br>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

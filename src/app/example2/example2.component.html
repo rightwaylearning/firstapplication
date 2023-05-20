@@ -1,0 +1,22 @@
+<h3>Inner ngFor directive Example</h3>
+
+<div *ngFor="let student of studentInfo">
+    <h6>----------------------------</h6>
+      <ul>
+        <li>Roll Number: {{student.rollNumber}}</li>
+        <li>Name: {{student.name}}</li>
+        <li>age: {{student.age}}</li>
+        <li> My Subjects
+            <div *ngFor="let subject of student.subject">
+                <h5>-----------</h5>
+                <ul>
+                    <li>Subject Name: {{subject.subjectName}}</li>
+                    <li>Marks:{{subject.marks}}</li>
+                </ul>
+                <h5>----------</h5>
+            </div>
+        </li>
+      </ul>
+
+    <h6>----------------------------</h6>
+</div>
