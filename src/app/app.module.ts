@@ -8,6 +8,13 @@ import { IfelseComponent } from './ifelse/ifelse.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { Example1Component } from './example1/example1.component';
 import { Example2Component } from './example2/example2.component';
+import { StyleDirectiveComponent } from './style-directive/style-directive.component';
+import { FormsModule } from '@angular/forms';
+import { NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BootstrapListComponent } from './bootstrap-list/bootstrap-list.component';
+import { UiComponent } from './ui/ui.component';
+import { AssigmentComponent } from './assigment/assigment.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -20,9 +27,19 @@ import { Example2Component } from './example2/example2.component';
     IfelseComponent,
     SwitchCaseComponent,
     Example1Component,
-    Example2Component
+    Example2Component,
+    StyleDirectiveComponent,
+    BootstrapListComponent,
+    UiComponent,
+    AssigmentComponent
   ],
-  imports: [ BrowserModule],
+  imports: [ 
+    BrowserModule,
+    FormsModule,
+    NgbModule,
+    NgbDatepickerModule,
+    BrowserAnimationsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
